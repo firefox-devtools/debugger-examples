@@ -1,0 +1,16 @@
+{
+  "name": "debugger-examples",
+  "version": "0.0.1",
+  "description": "Collection of good pages to debug",
+  "main": "index.js",
+  "repository": {
+    "url": "git@github.com:jasonLaster/debugger-examples.git",
+    "type": "git"
+  },
+  "author": "Jason Laster <jason.laster.11@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0",
+    "serve-index": "^1.8.0"
+  }
+}

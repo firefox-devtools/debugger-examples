@@ -2,7 +2,9 @@
   "name": "debugger-examples",
   "version": "0.0.1",
   "description": "Collection of good pages to debug",
-  "main": "index.js",
+  "scripts": {
+    "start": "node bin/server"
+  },
   "repository": {
     "url": "git@github.com:jasonLaster/debugger-examples.git",
     "type": "git"

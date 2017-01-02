@@ -1,8 +1,17 @@
 ### Debugger Examples
 
-![screen shot 2016-12-15 at 12 02 53 pm](https://cloud.githubusercontent.com/assets/254562/21233768/6993d88e-c2be-11e6-8a50-7a4f1d0f7bfc.png)
+* [todomvc](./examples/todomvc) - simple app to debug
+* [increment](./examples/increment) - a simple source map example
+* [Debugger Evals](./examples/evals.html) - different types of evals
+* [Debugger Statements](./examples/debugger-statements.html)
+* [evals](./examples/evals.html)
+* [exceptions](./examples/exceptions.html)
+* [iframe](./examples/iframe.html)
+* [pythagorean](./examples/pythagorean)
+* [large-files](./examples/large-files.html)
+* [localStorage Keys](./examples/localstorage-keys.html)
 
-### Getting started
+#### Getting started
 
 ```
 git clone git@github.com:jasonLaster/debugger-examples.git

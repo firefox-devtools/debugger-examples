@@ -9,6 +9,7 @@
 * [iframe](./examples/iframe.html)
 * [large-files](./examples/large-files.html)
 * [localStorage Keys](./examples/localstorage-keys.html)
+* [Optimized Away Variable](./examples/optimized-away.html)
 
 #### Getting started
 

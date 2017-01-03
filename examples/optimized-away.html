@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Optimized Away</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+    <style>
+    body { padding-top: 2em; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button class="btn btn-primary" id="c">Click to Pause</button> and then:
+      <ol>
+        <li>select <strong>z</strong> in the <u>Call Stack</u></li>
+        <li>look for <strong>x</strong> under the <strong>f</strong> group in the <u>Scopes</u> section</li>
+      </ol>
+    </div>
+    <script>
+      function f(x, y) {
+        console.log(x);
+        return function z() {
+          return breakpoint(y);
+        };
+      }
+
+      function breakpoint() {
+        debugger;
+      }
+
+      var closure = f(10, "yess");
+
+      function click() {
+        closure();
+      }
+      document.getElementById("c").onclick = click;
+    </script>
+
+  </body>
+</html>

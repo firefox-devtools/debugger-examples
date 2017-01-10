@@ -6,6 +6,7 @@
 * [Evals](./examples/evals.html)
 * [Debugger Statements](./examples/debugger-statements.html)
 * [exceptions](./examples/exceptions.html)
+* [promises](./examples/promises.html)
 * [iframe](./examples/iframe.html)
 * [large-files](./examples/large-files.html)
 * [localStorage Keys](./examples/localstorage-keys.html)

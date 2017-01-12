@@ -11,6 +11,8 @@
 * [large-files](./examples/large-files.html)
 * [localStorage Keys](./examples/localstorage-keys.html)
 * [Optimized Away Variable](./examples/optimized-away.html)
+* [typescript - greeter](./examples/typescript/greeter)
+* [coffeescript - tutorial](./examples/coffeescript/tutorial)
 
 #### Getting started
 

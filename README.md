@@ -14,6 +14,7 @@
 * [typescript - greeter](./examples/typescript/greeter)
 * [coffeescript - tutorial](./examples/coffeescript/tutorial)
 * [Create React App - (jsx, flow)](./examples/my-app/build)
+* [source mapped js.min files](http://wbamberg.github.io/example-websites/source-mapping/index.html)
 
 #### Getting started
 

@@ -13,6 +13,7 @@
 * [Optimized Away Variable](./examples/optimized-away.html)
 * [typescript - greeter](./examples/typescript/greeter)
 * [coffeescript - tutorial](./examples/coffeescript/tutorial)
+* [Create React App - (jsx, flow)](./examples/my-app/build)
 
 #### Getting started
 

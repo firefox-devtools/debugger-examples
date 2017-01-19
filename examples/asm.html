@@ -1,0 +1,23 @@
+
+<html>
+  <head>
+    <title>Asm.js</title>
+  </head>
+
+  <body>
+
+    <script>
+    var asmjs = (function () {
+      "use asm";
+      function f() {
+        return 1|0;
+      }
+      return {f: f};
+    })()
+    </script>
+
+    <button onclick="console.log(asmjs.f());">test</button>
+    </script>
+  </body>
+
+</html>

@@ -9,22 +9,29 @@
 
 ### Examples
 
-* [increment](./examples/increment) - a simple source map example
-* [pythagorean](./examples/pythagorean) - a simple example of scopes
-* [Evals](./examples/evals.html)
-* [Debugger Statements](./examples/debugger-statements.html)
-* [exceptions](./examples/exceptions.html)
-* [exceptions](./examples/arrays.html)
-* [promises](./examples/promises.html)
-* [iframe](./examples/iframe.html)
-* [large-files](./examples/large-files.html)
-* [localStorage Keys](./examples/localstorage-keys.html)
-* [Optimized Away Variable](./examples/optimized-away.html)
-* [typescript - greeter](./examples/typescript/greeter)
-* [coffeescript - tutorial](./examples/coffeescript/tutorial)
-* [Create React App - (jsx, flow)](./examples/my-app/build)
-* [source mapped js.min files](http://wbamberg.github.io/example-websites/source-mapping/index.html)
-* [asm.js](./examples/asm.html)
+|||
+|---|---|
+| [pythagorean](./examples/pythagorean)| example of scopes|
+| [Evals](./examples/evals.html)| different evals |
+| [Debugger Statements](./examples/debugger-statements.html)||
+| [exceptions](./examples/exceptions.html)| different caught / uncaught exceptions|
+| [arrays / objects](./examples/arrays.html)| different arrays / objects |
+| [promises](./examples/promises.html)||
+| [iframe](./examples/iframe.html)|pausing in an iframe|
+| [large-files](./examples/large-files.html)||
+| [localStorage Keys](./examples/localstorage-keys.html)||
+| [Optimized Away Variable](./examples/optimized-away.html)||
+| [typescript - greeter](./examples/typescript/greeter)||
+| [coffeescript - tutorial](./examples/coffeescript/tutorial)||
+| [Create React App - (jsx, flow)](./examples/my-app/build)||
+| [asm.js](./examples/asm.html)||
+
+### Source Maps
+
+|||
+|---|---|
+| [increment](./examples/increment)| a simple source map example|
+| [source mapped js.min files](http://wbamberg.github.io/example-websites/source-mapping/index.html)| simple webpack example|
 
 #### Getting started
 

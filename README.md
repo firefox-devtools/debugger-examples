@@ -1,6 +1,7 @@
 ### Debugger Examples
 
 * [todomvc](./examples/todomvc) - simple app to debug
+* [sensor web](http://aws-sensorweb-static-site.s3-website-us-west-2.amazonaws.com/) - a large typescript app
 * [increment](./examples/increment) - a simple source map example
 * [pythagorean](./examples/pythagorean) - a simple example of scopes
 * [Evals](./examples/evals.html)

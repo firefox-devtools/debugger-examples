@@ -1,7 +1,14 @@
-### Debugger Examples
+## Debugger Examples
 
-* [todomvc](./examples/todomvc) - simple app to debug
-* [sensor web](http://aws-sensorweb-static-site.s3-website-us-west-2.amazonaws.com/) - a large typescript app
+### TodoMVC
+[![][todomvc-screen]](./examples/todomvc)
+
+### Sensor Web
+
+[![][sensor-screen]][sensor-url]
+
+### Examples
+
 * [increment](./examples/increment) - a simple source map example
 * [pythagorean](./examples/pythagorean) - a simple example of scopes
 * [Evals](./examples/evals.html)
@@ -27,3 +34,8 @@ cd debugger-examples
 yarn install
 yarn start
 ```
+
+
+[todomvc-screen]: https://cloud.githubusercontent.com/assets/254562/22754631/3644ed8a-ee0e-11e6-9ada-17ca36f7e0cf.png
+[sensor-screen]: https://cloud.githubusercontent.com/assets/254562/22754691/6f316e70-ee0e-11e6-9136-83238cd3e530.png
+[sensor-url]: http://aws-sensorweb-static-site.s3-website-us-west-2.amazonaws.com

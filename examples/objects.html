@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Objects</title>
+  </head>
+
+  <body>
+    <script>
+      function objects() {
+
+        const badNames = {
+          foo: function foo() {},
+          bar: function() {}
+        }
+
+        let mutating = { a: 2 }
+        debugger
+
+        mutating.a = 3;
+        mutating.b = 'foo'
+        debugger;
+      }
+    </script>
+  </body>
+
+  <button onclick="objects()">objects</button>
+</html>

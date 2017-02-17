@@ -15,7 +15,8 @@
 | [Evals](./examples/evals.html)| different evals |
 | [Debugger Statements](./examples/debugger-statements.html)||
 | [exceptions](./examples/exceptions.html)| different caught / uncaught exceptions|
-| [arrays / objects](./examples/arrays.html)| different arrays / objects |
+| [large objects](./examples/arrays.html)| large arrays / objects |
+| [objects](./examples/objects.html)| objects |
 | [promises](./examples/promises.html)||
 | [iframe](./examples/iframe.html)|pausing in an iframe|
 | [large-files](./examples/large-files.html)||

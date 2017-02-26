@@ -1,17 +1,25 @@
+<!DOCTYPE HTML>
 <html>
-  <head>
-    <title>Debugger test page</title>
-  </head>
+	<head>
+        <title>Debugger test page</title>
+	</head>
 
-  <body>
-    <script>
+	<body>
+        <script>
+            function callPromises() {
+                const noParam = Promise.reject();
+                const rejected = Promise.reject(3);
+                const resolved = Promise.reject('Success');
+                const rejected2 = Promise.reject(new Error('fail'));
+                const unhandledPromise = new Promise((resolve, reject) => {
+                })
 
-      const rejected = Promise.reject();
-      const unhandledPromise = new Promise((resolve, reject) => {
-      })
-      debugger;
-
-    </script>
-  </body>
-
+                const z = new Promise((resolve) => resolve(2));
+                const x = new Promise((r, reject) => reject(3));
+                
+                debugger;
+            }
+            callPromises();
+        </script>
+	</body>
 </html>

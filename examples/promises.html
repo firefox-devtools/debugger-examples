@@ -8,14 +8,19 @@
         <script>
             function callPromises() {
                 const noParam = Promise.reject();
-                const rejected = Promise.reject(3);
-                const resolved = Promise.reject('Success');
-                const rejected2 = Promise.reject(new Error('fail'));
-                const unhandledPromise = new Promise((resolve, reject) => {
-                })
+                const rejectFale = Promise.reject(false);
+                const reject = Promise.reject('Rejected!!!');
+                const rejectError = Promise.reject(new Error('fail'));
+                const rejectNum = Promise.reject(3);
 
-                const z = new Promise((resolve) => resolve(2));
-                const x = new Promise((r, reject) => reject(3));
+		const reolveTrue = Promise.resolve(true)
+		const resovle = Promise.resolve('Success')
+		const resovle3 = Promise.resolve(3)
+		    
+		const unhandledPromise = new Promise((resolve, reject) => {})
+
+                const resolveArrowNum = new Promise(resolve => resolve(2));
+                const rejectArrow = new Promise((r, reject) => reject(3));
                 
                 debugger;
             }

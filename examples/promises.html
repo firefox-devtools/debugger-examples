@@ -1,17 +1,30 @@
+<!DOCTYPE HTML>
 <html>
-  <head>
-    <title>Debugger test page</title>
-  </head>
+	<head>
+        <title>Debugger - Promises</title>
+	</head>
 
-  <body>
-    <script>
+	<body>
+        <script>
+            function callPromises() {
+                const noParam = Promise.reject();
+                const rejectFale = Promise.reject(false);
+                const reject = Promise.reject('Rejected!!!');
+                const rejectError = Promise.reject(new Error('fail'));
+                const rejectNum = Promise.reject(3);
 
-      const rejected = Promise.reject();
-      const unhandledPromise = new Promise((resolve, reject) => {
-      })
-      debugger;
+		const reolveTrue = Promise.resolve(true)
+		const resovle = Promise.resolve('Success')
+		const resovle3 = Promise.resolve(3)
+		    
+		const unhandledPromise = new Promise((resolve, reject) => {})
 
-    </script>
-  </body>
-
+                const resolveArrowNum = new Promise(resolve => resolve(2));
+                const rejectArrow = new Promise((r, reject) => reject(3));
+                
+                debugger;
+            }
+            callPromises();
+        </script>
+	</body>
 </html>

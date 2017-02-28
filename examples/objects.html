@@ -4,23 +4,8 @@
   </head>
 
   <body>
-    <script>
-      function objects() {
-
-        const badNames = {
-          foo: function foo() {},
-          bar: function() {}
-        }
-
-        let mutating = { a: 2 }
-        debugger
-
-        mutating.a = 3;
-        mutating.b = 'foo'
-        debugger;
-      }
-    </script>
+    <script src="objects/mutating.js">
   </body>
 
-  <button onclick="objects()">objects</button>
+  <button onclick="mutating()">objects</button>
 </html>

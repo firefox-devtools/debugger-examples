@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Localstorage keys</title>
+    <title>Arrays</title>
   </head>
 
   <body>
@@ -8,9 +8,8 @@
       function arrays() {
         localStorage[1] = "a test";
         localStorage[2] = "a";
-        localStorage[200] = "another test";
+        localStorage[200000] = "another test";
         let data = JSON.parse(JSON.stringify(localStorage));
-        debugger
 
         let mixed = {
           "10": 10,
@@ -28,11 +27,10 @@
         sparse[2] = "a";
         sparse[200] = "another test";
         data = JSON.parse(JSON.stringify(sparse));
-        debugger
         console.log(data) // Put breakpoint here
 
         let full = [];
-        for (i = 0; i < 5; i++) {
+        for (i = 0; i < 50000; i++) {
           full.push(3)
           full.push([3,2])
           full.push({a: 2})
@@ -42,9 +40,6 @@
           full.push({a: 2})
         }
         debugger;
-        data = JSON.parse(JSON.stringify(full));
-        debugger
-        console.log(data) // Put breakpoint here
       }
     </script>
   </body>

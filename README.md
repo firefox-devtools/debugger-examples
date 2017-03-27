@@ -9,48 +9,48 @@
 
 ### Examples
 
-|||
-|---|---|
-| [pythagorean](./examples/pythagorean)| example of scopes|
-| [Evals](./examples/evals.html)| different evals |
-| [Debugger Statements](./examples/debugger-statements.html)||
-| [exceptions](./examples/exceptions.html)| different caught / uncaught exceptions|
-| [large objects](./examples/arrays.html)| large arrays / objects |
-| [objects](./examples/objects.html)| objects |
-| [promises](./examples/promises.html)||
-| [iframe](./examples/iframe.html)|pausing in an iframe|
-| [large-files](./examples/large-files.html)||
-| [localStorage Keys](./examples/localstorage-keys.html)||
-| [Optimized Away Variable](./examples/optimized-away.html)||
-| [typescript - greeter](./examples/typescript/greeter)||
-| [coffeescript - tutorial](./examples/coffeescript/tutorial)||
-| [Create React App - (jsx, flow)](./examples/my-app/build)||
-| [asm.js](./examples/asm.html)||
+| | |
+| --- | --- |
+| [pythagorean](./examples/pythagorean) | example of scopes |
+| [Evals](./examples/evals.html) | different evals |
+| [Debugger Statements](./examples/debugger-statements.html) | |
+| [exceptions](./examples/exceptions.html) | different caught / uncaught exceptions |
+| [large objects](./examples/arrays.html) | large arrays / objects |
+| [objects](./examples/objects.html) | objects |
+| [promises](./examples/promises.html) | |
+| [iframe](./examples/iframe.html) | pausing in an iframe |
+| [large-files](./examples/large-files.html) | |
+| [localStorage Keys](./examples/localstorage-keys.html) | |
+| [Optimized Away Variable](./examples/optimized-away.html) | |
+| [typescript - greeter](./examples/typescript/greeter) | |
+| [coffeescript - tutorial](./examples/coffeescript/tutorial) | |
+| [Create React App - (jsx, flow)](./examples/my-app/build) | |
+| [asm.js](./examples/asm.html) | |
 
 ### Source Maps
 
-|||
-|---|---|
-| [increment](./examples/increment)| a simple source map example|
-| [source mapped js.min files](http://wbamberg.github.io/example-websites/source-mapping/index.html)| simple webpack example|
+| | |
+| --- | --- |
+| [increment](./examples/increment) | a simple source map example |
+| [source mapped js.min files](http://wbamberg.github.io/example-websites/source-mapping/index.html) | simple webpack example|
 
 ### Local Test Pages
 
-|||
-|---|---|
-|[asm]||
-|[debugger-statements]||
-|[exceptions]||
-|[frames]||
-|[iframes]||
-|[minified]||
-|[return-values]|special scope variables |
-|[script-switching]||
-|[scripts]||
-|[sources]||
-|[sourcemap-bogus]||
-|[sourcemaps]||
-|[sourcemaps2]||
+| | |
+| --- | --- |
+| [asm] | |
+| [debugger-statements] | |
+| [exceptions] | |
+| [frames] | |
+| [iframes] | |
+| [minified] | |
+| [return-values] | special scope variables |
+| [script-switching] | |
+| [scripts] | |
+| [sources] | |
+| [sourcemap-bogus] | |
+| [sourcemaps] | |
+| [sourcemaps2] | |
 
 
 #### Getting started

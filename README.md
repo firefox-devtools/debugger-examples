@@ -9,9 +9,9 @@
 
 ### Examples
 
-|||
+| example | description |
 |---|---|
-| [pythagorean](./examples/pythagorean)| example of scopes|
+| [pythagorean](./examples/pythagorean)| example of scopes |
 | [Evals](./examples/evals.html)| different evals |
 | [Debugger Statements](./examples/debugger-statements.html)||
 | [exceptions](./examples/exceptions.html)| different caught / uncaught exceptions|
@@ -29,14 +29,14 @@
 
 ### Source Maps
 
-|||
+| example | description |
 |---|---|
 | [increment](./examples/increment)| a simple source map example|
 | [source mapped js.min files](http://wbamberg.github.io/example-websites/source-mapping/index.html)| simple webpack example|
 
 ### Local Test Pages
 
-|||
+| example | description |
 |---|---|
 |[asm]||
 |[debugger-statements]||

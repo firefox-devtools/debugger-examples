@@ -56,7 +56,7 @@
 #### Getting started
 
 ```
-git clone git@github.com:jasonLaster/debugger-examples.git
+git clone git@github.com:devtools-html/debugger-examples.git
 cd debugger-examples
 yarn install
 yarn start

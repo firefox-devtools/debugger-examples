@@ -1,0 +1,58 @@
+<html>
+<body>
+<script>
+(function() {
+  var A = {};
+  window.A = A;
+  (A.F = function() {
+    A.G();
+  }), (A.G = function() {
+    function _G() {}
+    A.H();
+  }), (A.H = function() {
+    A.I();
+  }), (A.I = function() {
+    function _I() {}
+    A.J();
+  });
+  A.J = function() {
+    function _J() {}
+    A.K();
+  };
+  A.K = function() {
+    console.log(123);
+  };
+
+  window.addEventListener('click', A.F, false);
+})();
+</script>
+
+<!-- a bit confusing -->
+
+<script>
+(function() {
+  var A = {};
+  window.A = A;
+  (A.F = function() {
+    A.G();
+  }), (A.G = function() {
+    function _G() {}
+    A.H();
+  }), (A.H = function() {
+    A.I();
+  }), (A.I = function() {
+    function _I() {}
+    A.J();
+  });
+  A.J = function() {
+    function _J() {}
+    A.K();
+  };
+  A.K = function() {
+    console.log(123);
+  };
+  window.addEventListener('wheel', A.F, false);
+})();
+</script>
+</body>
+</html>

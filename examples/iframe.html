@@ -4,10 +4,19 @@
   </head>
 
   <body>
-    <script>
-      debugger;
-    </script>
     <iframe src="debugger-statements.html"></iframe>
+
+    <script>
+    setTimeout(
+  function() {
+    const i = document.querySelector('iframe');
+    const w = i.contentWindow;
+    w.addEventListener('click', () => {});
+    window.addEventListener('click', () => {});
+  },
+  1000,
+);
+</script>
   </body>
 
 </html>

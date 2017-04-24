@@ -9,11 +9,14 @@
 
 ### Examples
 
+<<<<<<< 7ce4b03c924577e1b7745222409294749b1006c1
 | | |
 | --- | --- |
 | [pythagorean](./examples/pythagorean) | example of scopes |
 | [Evals](./examples/evals.html) | different evals |
 | [Debugger Statements](./examples/debugger-statements.html) | |
+| [Breakpoints](./examples/breakpoints.html)||
+
 | [exceptions](./examples/exceptions.html) | different caught / uncaught exceptions |
 | [large objects](./examples/arrays.html) | large arrays / objects |
 | [objects](./examples/objects.html) | objects |
@@ -26,6 +29,7 @@
 | [coffeescript - tutorial](./examples/coffeescript/tutorial) | |
 | [Create React App - (jsx, flow)](./examples/my-app/build) | |
 | [asm.js](./examples/asm.html) | |
+| [wasm](./examples/wasm/fib/fib.index.html)||
 
 ### Source Maps
 

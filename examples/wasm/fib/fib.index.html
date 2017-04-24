@@ -1,0 +1,29 @@
+<script>
+  var emGlue = {
+    env: {
+      DYNAMICTOP_PTR: 0,
+      tempDoublePtr: 0,
+      ABORT: 0,
+      STACKTOP: 0,
+      STACK_MAX: 10,
+      gb: 0,
+      fb: 0,
+      memory: new WebAssembly.Memory({initial: 256, maximum: 256}),
+      table: new WebAssembly.Table({element: "anyfunc", initial: 0, maximum: 0}),
+      memoryBase: 0,
+      tableBase: 0,
+    },
+    global: {
+      NaN: window.NaN,
+      Infinity: window.Infinity,
+    }
+  };
+
+  fetch('fib.wasm').then(req => req.arrayBuffer())
+                   .then(res => WebAssembly.instantiate(res, emGlue))
+                   .then(({instance}) => run(instance));
+
+  function run(instance) {
+    console.log(instance.exports._fib(4));
+  }
+</script>

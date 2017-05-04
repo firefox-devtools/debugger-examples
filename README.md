@@ -20,6 +20,7 @@
 | [objects](./examples/objects.html) | objects |
 | [promises](./examples/promises.html) | |
 | [iframe](./examples/iframe.html) | pausing in an iframe |
+| [500 sources](./examples/500-sources.html) | A page with 500 bogus sources |
 | [large-files](./examples/large-files.html) | |
 | [localStorage Keys](./examples/localstorage-keys.html) | |
 | [Optimized Away Variable](./examples/optimized-away.html) | |

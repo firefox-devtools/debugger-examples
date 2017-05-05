@@ -28,6 +28,7 @@
 | [clojurescript - hello](./examples/clojurescript/hello.html) | |
 | [coffeescript - tutorial](./examples/coffeescript/tutorial) | |
 | [Create React App - (jsx, flow)](./examples/my-app/build) | |
+| [JS in HTML](./examples-js-in-html.html) | A webpage with several inline scripts |
 | [asm.js](./examples/asm.html) | |
 | [wasm](./examples/wasm/fib/fib.index.html)||
 

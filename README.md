@@ -14,6 +14,7 @@
 | [pythagorean](./examples/pythagorean) | example of scopes |
 | [Evals](./examples/evals.html) | different evals |
 | [Debugger Statements](./examples/debugger-statements.html) | |
+| [Booleans](./examples/booleans/index.html) | example with booleans |
 | [Breakpoints](./examples/breakpoints.html)||
 | [exceptions](./examples/exceptions.html) | different caught / uncaught exceptions |
 | [large objects](./examples/arrays.html) | large arrays / objects |

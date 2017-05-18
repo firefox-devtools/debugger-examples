@@ -6,11 +6,22 @@
   <body>
     <script>
     window.onClick = function() {
-  console.log('hi');
+  console.log("hi");
 };
 
-addEventListener('wheel', () => {});
+addEventListener("wheel", () => {});
 </script>
+
+<button id="button">Post Message</button>
+<script>
+document.getElementById("button").addEventListener("click", event => {
+  window.postMessage({ a: 1, b: 2 }, "*");
+});
+window.addEventListener("message", event => {
+  debugger;
+});
+</script>
+
   </body>
 
 </html>

@@ -88,3 +88,7 @@ yarn start
 [sourcemaps]:http://localhost:8000/examples/doc-sourcemaps.html
 [sourcemaps2]:http://localhost:8000/examples/doc-sourcemaps2.html
 [sources]:http://localhost:8000/examples/doc-sources.html
+
+### License
+
+[CC0-1.0](./LICENSE).

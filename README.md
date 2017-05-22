@@ -1,4 +1,4 @@
-## Debugger Examples
+#r Debugger Examples
 
 ### TodoMVC
 [![][todomvc-screen]](./examples/todomvc)
@@ -32,6 +32,9 @@
 | [JS in HTML](./examples/js-in-html.html) | A webpage with several inline scripts |
 | [asm.js](./examples/asm.html) | |
 | [wasm](./examples/wasm/fib/fib.index.html)||
+| [errors.js](./examples/errors.html) | A simple html file with one error |
+| [events.js](./examples/events.html) | A page with some event handlers |
+| [intervals](./examples/interval.html) | Code that is run inside of a setInterval |
 
 ### Source Maps
 

@@ -2,24 +2,9 @@
 <html>
 <head>
   <title>test scopes</title>
+  <script src="/interval.js"></script>
 </head>
 <body>
-<script type="text/javascript">
-  (function () {
-    var arr = [];
-    var i = 0;
-    (function () {
-      window.setInterval(function () {
-        arr.push(i++);
-        // set a breakpoint here, wait for break
-        // hover on arr in the upper scope (or check it in scopes pane)
-        // => should see the content of the array
-        // resume, wait for break
-        // hover on arr in the upper scope (or check it in scopes pane)
-        // shows the length but can't expand the values
-      }, 1000);
-    })();
-  })();
-</script>
+
 </body>
 </html>

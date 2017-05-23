@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Chrome</title>
+    <script>
+
+    function job() {
+      process();
+    }
+
+    function process() {
+      console.log('Processing');
+
+      var result = 'some data';
+
+      print(result);
+
+      finish();
+    }
+
+    function print(result) {
+      console.log(result);
+    }
+
+    function finish() {
+      debugger;
+    }
+    </script>
+  </head>
+  <h2>Sync</h2>
+  <button onclick="job()">Run Job</button>
+</html>

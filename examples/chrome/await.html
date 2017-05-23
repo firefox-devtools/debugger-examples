@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Chrome</title>
+    <script>
+    var sleep = n => new Promise(resolve => setTimeout(resolve, n));
+
+    function job() {
+      process();
+    }
+
+    async function process() {
+      console.log('Processing');
+
+      await sleep(100);
+      var result = await fetch('/chrome/await.html');
+      await print(result);
+      await sleep(100);
+      await finish();
+    }
+
+    function print(result) {
+      console.log(result);
+    }
+
+    function finish() {
+      debugger;
+    }
+    </script>
+  </head>
+  <h2>Async/Await</h2>
+  <button onclick="job()">Run Job</button>
+</html>

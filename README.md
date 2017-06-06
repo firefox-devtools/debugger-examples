@@ -1,9 +1,9 @@
 ## Debugger Examples
 
-### TodoMVC
+### [TodoMVC](./examples/todomvc)
 [![][todomvc-screen]](./examples/todomvc)
 
-### Sensor Web
+### [Sensor Web][sensor-url]
 
 [![][sensor-screen]][sensor-url]
 

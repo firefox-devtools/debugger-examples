@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>Chrome</title>
+    <script>
+    var sleep = n => new Promise(resolve => setTimeout(resolve, n));
+
+    function job() {
+      Promise.resolve()
+        .then(process);
+    }
+
+    function process() {
+      console.log('Processing');
+
+      return Promise.resolve()
+        .then(() => sleep(100))
+        .then(() => fetch('/chrome/promises.html'))
+        .then(result => print(result))
+        .then(() => sleep(100))
+        .then(finish);
+    }
+
+    function print(result) {
+      console.log(result);
+    }
+
+    function finish() {
+      debugger;
+    }
+    </script>
+  </head>
+  <h2>Promises</h2>
+  <button onclick="job()">Run Job</button>
+</html>

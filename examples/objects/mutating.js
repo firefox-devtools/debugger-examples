@@ -83,3 +83,32 @@ function HTMLElements() {
 
   debugger;
 }
+
+function shadowing() {
+  let foo = 'foo'
+  let bar = 'bar'
+  function inner(foo, location) {
+    bar = 'bazz'
+    debugger
+  }
+
+  inner('fim', 'cool');
+}
+
+
+function crypto() {
+  window.crypto.subtle.generateKey(
+  {
+    name: "ECDH",
+    namedCurve: "P-256", //can be "P-256", "P-384", or "P-521"
+  },
+  true, //whether the key is extractable (i.e. can be used in exportKey)
+  ["deriveKey", "deriveBits"] //can be any combination of "deriveKey" and "deriveBits"
+)
+  .then(function(keys){
+    debugger
+    console.log('app key', keys);
+    APP_PUBLIC_KEY = keys.publicKey;
+    APP_PRIVATE_KEY = keys.privateKey;
+  })
+}

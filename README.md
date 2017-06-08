@@ -34,7 +34,7 @@
 | [wasm](./examples/wasm/fib/fib.index.html)||
 | [errors.js](./examples/errors.html) | A simple html file with one error |
 | [events.js](./examples/events.html) | A page with some event handlers |
-| [intervals](./examples/interval.html) | Code that is run inside of a setInterval |
+| [scopes](./examples/scopes.html) | Examples of different scopes + vars |
 
 ### Source Maps
 

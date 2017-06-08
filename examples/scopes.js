@@ -1,25 +1,95 @@
-function scopes() {
-  const a = 'a';
-  const b = 'b';
-  const obj = {foo: 'foo val'};
-  obj.foo = 'foo val2';
+function oneIIFE() {
+  var ugh = [];
+  var i = 0;
 
-  function firstScope(c) {
-    const a = 'local A';
-    b + b;
-    obj.bar = 'bar val';
-    debugger;
-  }
-
-  if (true) {
-    let a = '';
-    b;
-  }
+  (function () {
+    (function() {
+     ugh.push(i++);
+     debugger;
+    })()
+  })()
 
   debugger;
-  firstScope('c var');
 }
 
-function outOfScope(b) {
-  const a = 'bogus A';
+function twoIIFEs() {
+  var ugh = [];
+  var i = 0;
+
+  (function () {
+    (function() {
+     ugh.push(i++);
+     debugger;
+   })();
+
+    (function() {
+     ugh.push(i++);
+     debugger;
+   })();
+
+  })()
+
+
+  debugger;
+}
+
+function twoDeepIIFEs() {
+  var ugh = [];
+  var i = 0;
+
+  (function () {
+    (function() {
+     ugh.push(i++);
+     debugger;
+   })()
+  })();
+
+  (function () {
+    (function() {
+     ugh.push(i++);
+     debugger;
+   })()
+  })();
+
+}
+
+function intervals() {
+  var running = true
+  var arr = [];
+  var i = 0;
+  setInterval(function() {
+    arr.push(i++);
+    if (running) {
+      debugger
+    }
+  },30)
+}
+
+function timeouts() {
+  (function() {
+    var arr = [];
+    var i = 0;
+    setTimeout(function() {
+      arr.push(i++);
+      debugger
+    },5)
+
+    setTimeout(function() {
+      arr.push(i++);
+      debugger
+    },15)
+
+  })()
+}
+
+function calls() {
+  var ugh = [];
+  var i = 0;
+  function foo() {
+    ugh.push(i++);
+    debugger
+  }
+
+  foo()
+  foo()
 }

@@ -85,18 +85,40 @@ function HTMLElements() {
 }
 
 function shadowing() {
-  let foo = 'foo'
-  let bar = 'bar'
-  function inner(foo, location) {
-    bar = 'bazz'
+  function keysFunc(keys) {
+    keys;
     debugger
   }
 
-  inner('fim', 'cool');
+  function mkeysFunc(mkeys) {
+    mkeys;
+    debugger
+  }
+
+  function locFunc(location) {
+    location;
+    debugger
+  }
+
+  function lengthFunc(length) {
+    length;
+    debugger
+  }
+
+  function assignFunc(assign) {
+    assign;
+    debugger
+  }
+
+  keysFunc('cool');
+  lengthFunc('cool');
+  mkeysFunc('cool');
+  locFunc('cool');
+  assignFunc('cool');
 }
 
 
-function crypto() {
+function cryptoShadowing() {
   window.crypto.subtle.generateKey(
   {
     name: "ECDH",
@@ -105,10 +127,10 @@ function crypto() {
   true, //whether the key is extractable (i.e. can be used in exportKey)
   ["deriveKey", "deriveBits"] //can be any combination of "deriveKey" and "deriveBits"
 )
-  .then(function(keys){
+  .then(function(myKeys){
     debugger
-    console.log('app key', keys);
-    APP_PUBLIC_KEY = keys.publicKey;
-    APP_PRIVATE_KEY = keys.privateKey;
+    console.log('app key', myKeys);
+    APP_PUBLIC_KEY = myKeys.publicKey;
+    APP_PRIVATE_KEY = myKeys.privateKey;
   })
 }

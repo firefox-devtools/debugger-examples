@@ -174,4 +174,18 @@ function columns() {
   obj.aaa().bbb().ccc();
 
   obj.aaa().bbb().ccc();
+
+
+  async function ppp() {
+    return new Promise(resolve => {
+      resolve()
+    })
+  }
+
+  ppp()
+  .then(function inner(res) {
+    return ppp()
+  })
+  .then((res) => ppp())
+  .then(ppp())
 }

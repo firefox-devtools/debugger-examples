@@ -175,17 +175,75 @@ function columns() {
 
   obj.aaa().bbb().ccc();
 
-
   async function ppp() {
     return new Promise(resolve => {
-      resolve()
-    })
+      resolve();
+    });
   }
 
   ppp()
-  .then(function inner(res) {
-    return ppp()
-  })
-  .then((res) => ppp())
-  .then(ppp())
+    .then(function inner(res) {
+      return ppp();
+    })
+    .then(res => ppp())
+    .then(ppp());
 }
+
+function promises() {
+  const noParam = Promise.reject();
+  const rejectFalse = Promise.reject(false);
+  const reject = Promise.reject("Rejected!!!");
+  const rejectError = Promise.reject(new Error("fail"));
+  const rejectNum = Promise.reject(3);
+
+  const resolveTrue = Promise.resolve(true);
+  const resolve = Promise.resolve("Success");
+  const resolve3 = Promise.resolve(3);
+
+  const unhandledPromise = new Promise((resolve, reject) => {});
+
+  const resolveArrowNum = new Promise(resolve => resolve(2));
+  const rejectArrow = new Promise((r, reject) => reject(3));
+
+  debugger;
+}
+
+(function() {
+  const funcs = [
+    "arrays",
+    "mutating",
+    "domElements",
+    "kitchenSink",
+    "singleLines",
+    "scopes",
+    "outOfScope",
+    "HTMLElements",
+    "shadowing",
+    "cryptoShadowing",
+    "columns",
+    "promises",
+    "oneIIFE",
+    "twoIIFEs",
+    "twoDeepIIFEs",
+    "intervals",
+    "timeouts"
+  ];
+  funcs.forEach(funcName => {
+    const func = window[funcName];
+
+    const pre = document.createElement("pre");
+    const code = document.createElement("code");
+    const link = document.createElement("a");
+    link.className = "example-link";
+    link.innerText = funcName;
+    link.onclick = func;
+
+    code.innerText = func.toString();
+    code.className = "javascript hljs";
+    pre.appendChild(code);
+    document.body.appendChild(link);
+    document.body.appendChild(pre);
+
+    hljs.highlightBlock(code);
+  });
+})();

@@ -9,6 +9,10 @@
 
 ### Examples
 
+[![][examples-screen]][examples-url]
+
+### Examples
+
 | | |
 | --- | --- |
 | [pythagorean](./examples/pythagorean) | example of scopes |
@@ -18,7 +22,6 @@
 | [Breakpoints](./examples/breakpoints.html)||
 | [exceptions](./examples/exceptions.html) | different caught / uncaught exceptions |
 | [large objects](./examples/arrays.html) | large arrays / objects |
-| [objects](./examples/objects.html) | objects |
 | [promises](./examples/promises.html) | |
 | [iframe](./examples/iframe.html) | pausing in an iframe |
 | [500 sources](./examples/500-sources.html) | A page with 500 bogus sources |
@@ -76,7 +79,8 @@ yarn start
 [sensor-screen]: https://cloud.githubusercontent.com/assets/254562/22754691/6f316e70-ee0e-11e6-9136-83238cd3e530.png
 [sensor-url]: http://aws-sensorweb-static-site.s3-website-us-west-2.amazonaws.com
 
-
+[examples-screen]:https://shipusercontent.com/e72dc7467d63d6ebcd69e504548534f8/Screen%20Shot%202017-07-12%20at%2011.48.25%20AM.png
+[examples-url]: https://devtools-html.github.io/debugger-examples/examples/examples.html
 
 [asm]:http://localhost:8000/examples/doc-asm.html
 [debugger-statements]:http://localhost:8000/examples/doc-debugger-statements.html

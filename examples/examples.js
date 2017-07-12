@@ -142,53 +142,6 @@ function cryptoShadowing() {
     });
 }
 
-function columns() {
-  function aaa() {
-    console.log("aaa");
-  }
-  function bbb() {
-    console.log("bbb");
-  }
-  function ccc() {
-    console.log("ccc");
-  }
-
-  const obj = {
-    aaa: function() {
-      console.log("aaa");
-      return obj;
-    },
-    bbb: function() {
-      console.log("bbb");
-      return obj;
-    },
-    ccc: function() {
-      console.log("ccc");
-      return obj;
-    }
-  };
-
-  aaa(bbb(), ccc());
-  aaa(bbb(), ccc());
-
-  obj.aaa().bbb().ccc();
-
-  obj.aaa().bbb().ccc();
-
-  async function ppp() {
-    return new Promise(resolve => {
-      resolve();
-    });
-  }
-
-  ppp()
-    .then(function inner(res) {
-      return ppp();
-    })
-    .then(res => ppp())
-    .then(ppp());
-}
-
 function promises() {
   const noParam = Promise.reject();
   const rejectFalse = Promise.reject(false);
@@ -238,12 +191,20 @@ function promises() {
     link.innerText = funcName;
     link.onclick = func;
 
+    const menuitem = document.createElement("a");
+    menuitem.innerText = funcName;
+    menuitem.onclick = func;
+
     code.innerText = func.toString();
     code.className = "javascript hljs";
     pre.appendChild(code);
-    document.body.appendChild(link);
-    document.body.appendChild(pre);
+    document.querySelector("#codes").appendChild(link);
+    document.querySelector("#codes").appendChild(pre);
 
-    hljs.highlightBlock(code);
+    document.querySelector("#sidebar-items").appendChild(menuitem);
+
+    if (window.hljs) {
+      hljs.highlightBlock(code);
+    }
   });
 })();

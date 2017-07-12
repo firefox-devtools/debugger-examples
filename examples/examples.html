@@ -7,6 +7,40 @@
 
     <title>Objects</title>
     <style>
+      body {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 150px 1fr;
+        margin: 0;
+      }
+
+      #sidebar {
+        background: darkslategrey;
+        padding: 20px;
+      }
+
+      #sidebar-items {
+        position: fixed
+      }
+
+      #sidebar a {
+        display: block;
+        color: yellow;
+        line-height: 30px;
+        font-family: monospace;
+        font-weight: bold;
+      }
+
+      #sidebar a:hover {
+        cursor: pointer;
+        color: magenta;
+      }
+
+      #codes {
+        background: black;
+        color: lightgoldenrodyellow;
+        padding: 20px;
+      }
       .example-link {
         font-family: sans-serif;
         font-size: 14px;
@@ -20,8 +54,13 @@
   </head>
 
   <body>
+    <div id="sidebar"><div id="sidebar-items"></div></div>
+    <div id="codes"></div>
+
+
+    <script src="examples/columns.js"></script>
     <script src="examples/arrays.js"></script>
-    <script src="scopes.js"></script>
+    <script src="examples/scopes.js"></script>
     <script src="examples.js"></script>
 
 

@@ -82,19 +82,19 @@ yarn start
 [examples-screen]:https://shipusercontent.com/e72dc7467d63d6ebcd69e504548534f8/Screen%20Shot%202017-07-12%20at%2011.48.25%20AM.png
 [examples-url]: https://devtools-html.github.io/debugger-examples/examples/examples.html
 
-[asm]:http://localhost:8000/examples/doc-asm.html
-[debugger-statements]:http://localhost:8000/examples/doc-debugger-statements.html
-[exceptions]:http://localhost:8000/examples/doc-exceptions.html
-[frames]:http://localhost:8000/examples/doc-frames.html
-[iframes]:http://localhost:8000/examples/doc-iframes.html
-[minified]:http://localhost:8000/examples/doc-minified.html
-[return-values]:http://localhost:8000/examples/doc-return-values.html
-[script-switching]:http://localhost:8000/examples/doc-script-switching.html
-[scripts]:http://localhost:8000/examples/doc-scripts.html
-[sourcemap-bogus]:http://localhost:8000/examples/doc-sourcemap-bogus.html
-[sourcemaps]:http://localhost:8000/examples/doc-sourcemaps.html
-[sourcemaps2]:http://localhost:8000/examples/doc-sourcemaps2.html
-[sources]:http://localhost:8000/examples/doc-sources.html
+[asm]:http://localhost:8000/integration/examples/doc-asm.html
+[debugger-statements]:http://localhost:8000/integration/examples/doc-debugger-statements.html
+[exceptions]:http://localhost:8000/integration/examples/doc-exceptions.html
+[frames]:http://localhost:8000/integration/examples/doc-frames.html
+[iframes]:http://localhost:8000/integration/examples/doc-iframes.html
+[minified]:http://localhost:8000/integration/examples/doc-minified.html
+[return-values]:http://localhost:8000/integration/examples/doc-return-values.html
+[script-switching]:http://localhost:8000/integration/examples/doc-script-switching.html
+[scripts]:http://localhost:8000/integration/examples/doc-scripts.html
+[sourcemap-bogus]:http://localhost:8000/integration/examples/doc-sourcemap-bogus.html
+[sourcemaps]:http://localhost:8000/integration/examples/doc-sourcemaps.html
+[sourcemaps2]:http://localhost:8000/integration/examples/doc-sourcemaps2.html
+[sources]:http://localhost:8000/integration/examples/doc-sources.html
 
 ### License
 

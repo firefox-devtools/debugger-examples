@@ -46,6 +46,7 @@
 | [increment](./examples/increment) | a simple source map example |
 | [source mapped js.min files](http://wbamberg.github.io/example-websites/source-mapping/index.html) | simple webpack example|
 | [mangled names](./examples/sequence-print/sequence_print.html) | a simple source map with mangled identifiers|
+| [dual use](./examples/dualuse/dualuse.html) | a simple example when same module used in two bundles|
 
 ### Local Test Pages
 

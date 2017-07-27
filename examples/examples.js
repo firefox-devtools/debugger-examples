@@ -27,6 +27,11 @@ function kitchenSink() {
     2;
   }
 
+  var windowy = {
+    history: {},
+    location: { a: 3 }
+  };
+
   var obj = { a: { b: { c: 3 } } };
   obj.a.b.c;
 
@@ -140,25 +145,6 @@ function cryptoShadowing() {
       APP_PUBLIC_KEY = myKeys.publicKey;
       APP_PRIVATE_KEY = myKeys.privateKey;
     });
-}
-
-function promises() {
-  const noParam = Promise.reject();
-  const rejectFalse = Promise.reject(false);
-  const reject = Promise.reject("Rejected!!!");
-  const rejectError = Promise.reject(new Error("fail"));
-  const rejectNum = Promise.reject(3);
-
-  const resolveTrue = Promise.resolve(true);
-  const resolve = Promise.resolve("Success");
-  const resolve3 = Promise.resolve(3);
-
-  const unhandledPromise = new Promise((resolve, reject) => {});
-
-  const resolveArrowNum = new Promise(resolve => resolve(2));
-  const rejectArrow = new Promise((r, reject) => reject(3));
-
-  debugger;
 }
 
 (function() {

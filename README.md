@@ -39,6 +39,7 @@
 | [errors.js](./examples/errors.html) | A simple html file with one error |
 | [events.js](./examples/events.html) | A page with some event handlers |
 | [scopes](./examples/scopes.html) | Examples of different scopes + vars |
+| [marko](https://github.com/marko-js-samples/marko-webpack) | Marko site |
 
 ### Source Maps
 

@@ -21,8 +21,6 @@
 | [Booleans](./examples/booleans) | example with booleans |
 | [Breakpoints](./examples/breakpoints.html)||
 | [exceptions](./examples/exceptions.html) | different caught / uncaught exceptions |
-| [large objects](./examples/arrays.html) | large arrays / objects |
-| [promises](./examples/promises.html) | |
 | [iframe](./examples/iframe.html) | pausing in an iframe |
 | [500 sources](./examples/500-sources.html) | A page with 500 bogus sources |
 | [large-files](./examples/large-files.html) | |

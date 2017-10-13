@@ -1,4 +1,9 @@
-var add = require('./math').add;
-exports.increment = function(val) {
-    return add(val, 1);
-};
+import { add } from "./math";
+import { power2, exponential } from "./funcs";
+export function increment(val) {
+  return add(val, 1);
+}
+
+export function powers(a, b) {
+  return exponential(power2(a), b);
+}

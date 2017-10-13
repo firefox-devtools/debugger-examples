@@ -1,0 +1,43 @@
+body {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 150px 1fr;
+  margin: 0;
+}
+
+#sidebar {
+  background: darkslategrey;
+  padding: 20px;
+}
+
+#sidebar-items {
+  position: fixed;
+}
+
+#sidebar a {
+  display: block;
+  color: yellow;
+  line-height: 30px;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+#sidebar a:hover {
+  cursor: pointer;
+  color: magenta;
+}
+
+#codes {
+  background: black;
+  color: lightgoldenrodyellow;
+  padding: 20px;
+}
+.example-link {
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.example-link:hover {
+  cursor: pointer;
+  color: magenta;
+}

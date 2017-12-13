@@ -8,12 +8,12 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <style>
       #result {
-        background: lightblue;
+        background: orange;
         padding: 20px;
         border-radius: 18px;
       }
       #tweets {
-        background: yellow;
+        background: grey;
         border-radius: 28px;
         padding: 20px;
       }
@@ -21,21 +21,16 @@
   </head>
   <body>
 
-    <h1>Shared Web Workers: Twitter Example</h1>
+    <h1>Shared Web Workers: inner iframe</h1>
     <nav>
       <button id="start-button">Start The Shared Worker</button>
       <button id="stop-button">Stop The Shared Worker</button>
     </nav>
-    <article>In this example we used a Shared Worker in order to read tweets and then send them to the main UI thread. <br/>You will see the messages that we are getting from the SharedWorker and then the tweets for @greenido user (yep, that's my user on Twitter)<br/>
-      Let’s have a look how it's working internally by opening Chrome DevTool on the Console tab.
-      <br/>
+    <article>
+      Inner iframe that in the real world could be another tab/window of our web app.
       <div id="result"></div>
       <div id="tweets"></div>
     </article>
-
-    <iframe style="width:90%; height: 600px; background: lightgray;"
-          src="shared-tweets-b.html"></iframe>>
-
     <script>
     var worker;
 
@@ -70,7 +65,7 @@ function startWorker() {
             tweets.appendChild(tweetTextItem);
           }
         }
-        // update the DOM outside our loop so it will be efficient action
+        // update the DOM outside our loop so it will be efficient
         console.log("WebWorker: Updated the DOM with Tweets");
         $("#tweets").append(tweets);
       }

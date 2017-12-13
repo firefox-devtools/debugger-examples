@@ -67,6 +67,17 @@
 | [sourcemaps] | |
 | [sourcemaps2] | |
 
+### Web Workers
+| | |
+| --- | --- |
+| [High primes](./examples/workers/high-prime.html) | The highest prime number |
+| [Inline](./examples/workers/inline.html) | Inline worker |
+| [Shared](./examples/workers/shared.html) | Shared workers |
+| [Shared tweets](./examples/workers/shared-tweets.html) | Shared Workers Tweets |
+| [Big data](./examples/workers/big-data.html) | Big Data (using transferable objects) In Web Worker |
+| [Pi](./examples/workers/pi.html) | The Run After Pi |
+
+Thanks to [greenido] for the cool web worker examples
 
 #### Getting started
 
@@ -98,6 +109,7 @@ yarn start
 [sourcemaps]:http://localhost:8000/integration/examples/doc-sourcemaps.html
 [sourcemaps2]:http://localhost:8000/integration/examples/doc-sourcemaps2.html
 [sources]:http://localhost:8000/integration/examples/doc-sources.html
+[greenido]: https://github.com/greenido/Web-Workers-Examples-
 
 ### License
 

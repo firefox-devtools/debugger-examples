@@ -68,6 +68,7 @@
 | [sourcemaps2] | |
 
 ### Web Workers
+
 | | |
 | --- | --- |
 | [High primes](./examples/workers/high-prime.html) | The highest prime number |

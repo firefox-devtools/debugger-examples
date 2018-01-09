@@ -2,6 +2,7 @@ import "babel-polyfill";
 
 console.log("hi");
 
+// example where we rename properties
 function funny(a = 2) {
   debugger;
   const obj = {
@@ -10,18 +11,18 @@ function funny(a = 2) {
     }
   };
 }
-
-function arrow() {
-  (a => {
-    debugger;
-  })(1);
-}
-
+//
+// function arrow() {
+//   (a => {
+//     debugger;
+//   })(1);
+// }
+//
 var slower = async function() {
   return Promise.resolve();
 };
 
-var slow = async function() {
+var asyncExample = async function() {
   let a = 2;
 
   await slower();
@@ -30,6 +31,25 @@ var slow = async function() {
   debugger;
   await slower();
 };
+
+const l = ["a"];
+
+function forOf() {
+  debugger;
+  let a = 4;
+  for (const x of l) {
+    setTimeout(() => {
+      debugger;
+      x;
+    });
+  }
+
+  for (const x of l);
+  for (const x of l);
+  for (const x of l);
+  for (const x of l);
+  for (const x of l);
+}
 
 // class Foo {
 //   [(a => {
@@ -53,7 +73,7 @@ var slow = async function() {
 //
 // const obj = new Foo();
 
-function dest() {
+function nestedProperty() {
   const { props: { a, b, c } } = { props: { a: 2, b: 3, c: 4 } };
   debugger;
 }
@@ -63,6 +83,10 @@ function dest() {
 // }
 
 // window[a ? "start" : "end"]
-window.funny = funny;
 // slow();
-dest2();
+// dest();
+
+window.funny = funny;
+window.nestedProperty = nestedProperty;
+window.asyncExample = asyncExample;
+window.forOf = forOf;

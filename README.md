@@ -49,6 +49,15 @@
 | [dual use](./examples/dualuse/dualuse.html) | a simple example when same module used in two bundles|
 | [30k files](./examples/f30k/index.html) | an example with 30,000 files in the source tree|
 
+### Libraries
+
+| | |
+| --- | --- |
+| [React](https://devtools-reporter-hzsvksiqym.now.sh) |  Reporter |
+| [Immutable](https://dbg-immutable.glitch.me/) | List + Map |
+| [Babel](./examples/babel) | Babel Transforms |
+
+
 ### Local Test Pages
 
 | | |

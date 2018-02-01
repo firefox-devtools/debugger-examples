@@ -1,0 +1,33 @@
+ <html>
+  <head>
+    <title>Simple</title>
+  </head>
+
+  <body>
+
+    <script type="text/plain">
+      debugger;
+      function bar() {
+          debugger
+          foo();
+      }
+    </script>
+
+
+    <script>
+      function foo() {
+        debugger;
+      }
+
+      function injectScript() {
+        const simpleScript = document.querySelector("script[type='text/plain']");
+        const newScript = document.createElement("script");
+
+        // debugger;
+        newScript.textContent = simpleScript.text;
+        document.body.appendChild(newScript);
+      }
+    </script>
+  </body>
+
+</html>

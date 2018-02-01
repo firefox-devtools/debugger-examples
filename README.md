@@ -58,6 +58,15 @@
 | [Babel](./examples/babel) | Babel Transforms |
 
 
+### Inline Scripts
+
+| | |
+| --- | --- |
+| [simple](./examples/scripts/simple.html) | an example w/ an inline script that can be injected |
+| [react](./examples/scripts/react.html) | an example w/ an inline script w/ a source map that can be injected |
+| [react2](./examples/scripts/react2.html) | an example w/ an inline script that has a source map |
+
+
 ### Local Test Pages
 
 | | |

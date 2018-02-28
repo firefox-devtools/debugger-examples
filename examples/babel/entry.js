@@ -18,7 +18,15 @@ function funny(a = 2) {
 //   })(1);
 // }
 //
+
+var slowest = async function() {
+  return Promise.resolve();
+};
+
 var slower = async function() {
+  await slowest();
+  console.log("yo");
+  await slowest();
   return Promise.resolve();
 };
 

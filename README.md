@@ -56,6 +56,7 @@
 | [React](https://devtools-reporter-hzsvksiqym.now.sh) |  Reporter |
 | [Immutable](https://dbg-immutable.glitch.me/) | List + Map |
 | [Babel](./examples/babel) | Babel Transforms |
+| [Angular](https://angular2.realworld.io/#/) | Angular - angular2.realworld |
 
 
 ### Inline Scripts

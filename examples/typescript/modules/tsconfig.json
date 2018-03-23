@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "outDir": "./lib/",
+        "sourceMap": true,
+        "inlineSources": true
+    },
+    "include": [
+        "./src/**/*"
+    ]
+}

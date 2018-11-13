@@ -78,6 +78,7 @@ var app = app || {};
 		addOne: function (todo) {
 			var view = new app.TodoView({ model: todo });
 			this.$list.append(view.render().el);
+			console.log(`todo ${todo.attributes.title} created`)
 		},
 
 		// Add all items in the **Todos** collection at once.

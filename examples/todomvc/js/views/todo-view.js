@@ -33,7 +33,6 @@ var app = app || {};
 			this.listenTo(this.model, 'change', this.render);
 			this.listenTo(this.model, 'destroy', this.remove);
 			this.listenTo(this.model, 'visible', this.toggleVisible);
-			console.log("todo created", this.model.attributes)
 		},
 
 		// Re-render the titles of the todo item.

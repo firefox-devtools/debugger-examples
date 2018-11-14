@@ -104,7 +104,7 @@ var app = app || {};
 				this.clear();
 			}
 
-			this.$el.removeClass('editing');
+			this.el.removeClass('editing');
 		},
 
 		// If you hit `enter`, we're through editing the item.

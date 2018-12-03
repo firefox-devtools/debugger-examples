@@ -1,6 +1,7 @@
 /*global Backbone, jQuery, _, ENTER_KEY, ESC_KEY */
 var app = app || {};
 
+
 (function ($) {
 	'use strict';
 
@@ -67,17 +68,20 @@ var app = app || {};
 
 		// Toggle the `"completed"` state of the model.
 		toggleCompleted: function () {
+			logTodo(this.model, 'toggled')
 			this.model.toggle();
 		},
 
 		// Switch this view into `"editing"` mode, displaying the input field.
 		edit: function () {
+			logTodo(this.model, 'start editing')
 			this.$el.addClass('editing');
 			this.$input.focus();
 		},
 
 		// Close the `"editing"` mode, saving changes to the todo.
 		close: function () {
+			logTodo(this.model, 'closing')
 			var value = this.$input.val();
 			var trimmedValue = value.trim();
 
@@ -104,7 +108,7 @@ var app = app || {};
 				this.clear();
 			}
 
-			this.el.removeClass('editing');
+			this.el.classList.remove('editing');
 		},
 
 		// If you hit `enter`, we're through editing the item.
@@ -126,6 +130,7 @@ var app = app || {};
 
 		// Remove the item, destroy the model from *localStorage* and delete its view.
 		clear: function () {
+			logTodo(this.model, 'removing')
 			this.model.destroy();
 		}
 	});

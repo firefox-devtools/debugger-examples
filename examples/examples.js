@@ -181,6 +181,7 @@ function cryptoShadowing() {
     menuitem.innerText = funcName;
     menuitem.onclick = func;
 
+
     code.innerText = func.toString();
     code.className = "javascript hljs";
     pre.appendChild(code);
@@ -189,6 +190,9 @@ function cryptoShadowing() {
 
     document.querySelector("#sidebar-items").appendChild(menuitem);
 
+    menuitem.addEventListener('click', function() {
+      pre.scrollIntoView();
+    });
     if (window.hljs) {
       hljs.highlightBlock(code);
     }

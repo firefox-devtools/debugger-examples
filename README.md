@@ -50,6 +50,7 @@
 | [mangled names](./examples/sequence-print/sequence_print.html) | a simple source map with mangled identifiers|
 | [dual use](./examples/dualuse/dualuse.html) | a simple example when same module used in two bundles|
 | [30k files](./examples/f30k/index.html) | an example with 30,000 files in the source tree|
+| [multiple tabs](https://q7mmol9xy9.codesandbox.io/) | an example where both original and generated sources have the same URLs |
 
 ### Libraries
 

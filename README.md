@@ -96,6 +96,7 @@
 
 | | |
 | --- | --- |
+| [Hello](https://dbg-workers.glitch.me/) | A simple worker hat starts up at the beginning |
 | [High primes](./examples/workers/high-prime.html) | The highest prime number |
 | [Inline](./examples/workers/inline.html) | Inline worker |
 | [Shared](./examples/workers/shared.html) | Shared workers |

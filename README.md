@@ -27,6 +27,7 @@
 | [long-lines](./examples/long-lines) | |
 | [localStorage Keys](./examples/localstorage-keys.html) | |
 | [Optimized Away Variable](./examples/optimized-away.html) | |
+| [typescript - perfetto](https://ui.perfetto.dev/#!/viewer) | perfetto tracing |
 | [typescript - greeter](./examples/typescript/greeter) | |
 | [clojurescript - hello](./examples/clojurescript/hello.html) | |
 | [coffeescript - tutorial](./examples/coffeescript/tutorial) | |

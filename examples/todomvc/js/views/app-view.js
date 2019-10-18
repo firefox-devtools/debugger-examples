@@ -78,7 +78,6 @@ var app = app || {};
 		addOne: function (todo) {
 			var view = new app.TodoView({ model: todo });
 			this.$list.append(view.render().el);
-			logTodo(todo, 'created')
 		},
 
 		// Add all items in the **Todos** collection at once.
@@ -92,7 +91,6 @@ var app = app || {};
 		},
 
 		filterAll: function () {
-			console.log(`Filter Todos`)
 			app.todos.each(this.filterOne, this);
 		},
 

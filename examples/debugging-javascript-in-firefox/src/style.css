@@ -1,0 +1,20 @@
+body {
+	background:black;
+	color:white;
+}
+h1:hover {
+	background-color:#ffffff;
+	color:#000000;
+}
+img.kitten {
+	margin: 20px;
+	padding: 10px;
+	border: 3px solid white;
+}
+img {
+	border: 10px;
+}
+.big {
+	font-size: 32px;
+	display:block;
+}
